@@ -1,0 +1,1 @@
+.app-container { position: relative; width: 100%; min-height: 100vh; min-height: 100dvh; overflow: hidden; background: radial-gradient(ellipse at 45% 25%,rgba(255,255,255,.65) 0%,transparent 48%),radial-gradient(ellipse at 90% 20%,rgba(171,213,241,.65) 0%,transparent 45%),linear-gradient(125deg,#dcecf8 0%,#b8d8f0 48%,#e6f3fa 100%); }

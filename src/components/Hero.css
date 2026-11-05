@@ -1,0 +1,557 @@
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 960px;
+  height: 100vh;
+  height: 100dvh;
+  min-height: 850px;
+  overflow: hidden;
+  font-family: 'Manrope', sans-serif;
+  color: #17344f;
+}
+
+/* LEFT CONTENT */
+
+.hero-content {
+  position: absolute;
+  top: 19%;
+  left: 5.7%;
+  width: 31%;
+  z-index: 5;
+}
+
+.treatment-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.72);
+  color: #31566f;
+  font-size: 13px;
+  font-weight: 800;
+  margin-bottom: 23px;
+}
+
+.treatment-badge span {
+  font-size: 23px;
+  line-height: 15px;
+}
+
+.hero-content h1 {
+  font-size: clamp(48px, 5.6vw, 76px);
+  line-height: 0.99;
+  letter-spacing: -4px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 22px;
+}
+
+.hero-content p {
+  max-width: 365px;
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 600;
+  color: #24445e;
+  margin-bottom: 23px;
+}
+
+/* HERO BUTTONS */
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.explore-btn {
+  height: 47px;
+  padding: 0 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background: #07549a;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.explore-btn:hover {
+  background: #063e73;
+  transform: translateY(-3px);
+}
+
+.explore-arrow {
+  width: 47px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #17344f;
+  font-size: 22px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.explore-arrow:hover {
+  transform: rotate(45deg);
+}
+
+/* DOCTOR VISUAL */
+
+.doctor-visual {
+  position: absolute;
+  top: 12.5%;
+  left: 35.5%;
+  width: 31%;
+  height: 54%;
+  z-index: 2;
+}
+
+.doctor-circle {
+  position: absolute;
+  width: 85%;
+  height: 90%;
+  top: 0;
+  left: 6%;
+  border-radius: 50%;
+  background: linear-gradient(
+    145deg,
+    rgba(255,255,255,0.85),
+    rgba(179,211,237,0.4)
+  );
+}
+
+.doctor-video {
+  position: absolute;
+  width: 85%;
+  height: 90%;
+  top: 0;
+  left: 6%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+/* EXPERIENCE CARD */
+
+.experience-card {
+  position: absolute;
+  bottom: -1%;
+  left: 0;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 19px;
+  min-width: 180px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(255,255,255,0.7);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(55, 104, 145, 0.08);
+}
+
+.experience-icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e6f3fc;
+  color: #07549a;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.experience-card strong,
+.lungs-stat strong {
+  display: block;
+  font-size: 19px;
+  font-weight: 800;
+  color: #17344f;
+}
+
+.experience-card small,
+.lungs-stat small {
+  display: block;
+  font-size: 10px;
+  color: #526d83;
+  font-weight: 600;
+}
+
+/* AWARDS */
+
+.award-card {
+  position: absolute;
+  top: 16.5%;
+  left: 61.8%;
+  z-index: 5;
+  width: 69px;
+  height: 151px;
+  padding: 13px 6px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.88);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.award-card strong {
+  font-size: 25px;
+  font-weight: 700;
+  color: #17344f;
+}
+
+.award-card small {
+  font-size: 9px;
+  font-weight: 800;
+  color: #536f86;
+}
+
+.award-icon {
+  margin-top: 12px;
+  width: 48px;
+  height: 65px;
+  display: grid;
+  place-items: center;
+  color: #07549a;
+  font-size: 29px;
+  background: linear-gradient(145deg, #b6d9f0, #477eae);
+  clip-path: polygon(10% 0, 90% 0, 75% 100%, 50% 83%, 25% 100%);
+}
+
+/* LUNGS VISUAL */
+
+.lungs-visual {
+  position: absolute;
+  top: 17%;
+  right: 3%;
+  width: 29%;
+  height: 45%;
+  z-index: 2;
+}
+
+.lungs-circle {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.35);
+}
+
+.lungs-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+/* LUNGS STAT */
+
+.lungs-stat {
+  position: absolute;
+  right: -3%;
+  top: 48%;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: 11px;
+  background: rgba(255,255,255,0.91);
+  box-shadow: 0 8px 25px rgba(55,104,145,0.08);
+}
+
+.lungs-icon {
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  background: #e5f2fb;
+  color: #07549a;
+  border-radius: 50%;
+  font-size: 21px;
+}
+
+/* BOTTOM MEDICAL CARDS */
+
+.medical-cards {
+  position: absolute;
+  left: 5.7%;
+  right: 5.2%;
+  bottom: 1.5%;
+  height: 25%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+  z-index: 6;
+}
+
+.medical-card {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.83);
+  border: 1px solid rgba(255,255,255,0.7);
+  box-shadow: 0 8px 25px rgba(53,100,139,0.05);
+}
+
+.medical-image {
+  position: absolute;
+  left: 5%;
+  top: 9%;
+  width: 49%;
+  height: 82%;
+  object-fit: contain;
+}
+
+.medical-arrow {
+  position: absolute;
+  top: 12%;
+  right: 9%;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #42e979;
+  color: #07533c;
+  font-size: 23px;
+  font-weight: 700;
+  transition: transform 0.3s ease;
+}
+
+.medical-card:hover .medical-arrow {
+  transform: rotate(45deg);
+}
+
+.medical-card h3 {
+  position: absolute;
+  right: 9%;
+  bottom: 12%;
+  text-align: right;
+  color: #263e50;
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 800;
+}
+
+.kidney-card {
+  background: #4f80a6;
+}
+
+.kidney-card h3 {
+  color: #ffffff;
+}
+
+.kidney-card .medical-arrow {
+  background: #ffffff;
+  color: #17344f;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1050px) {
+  .hero {
+    min-height: 900px;
+  }
+
+  .hero-content {
+    left: 4%;
+    width: 32%;
+  }
+
+  .doctor-visual {
+    left: 34%;
+    width: 33%;
+  }
+
+  .lungs-visual {
+    right: 1%;
+    width: 30%;
+  }
+
+  .medical-cards {
+    left: 4%;
+    right: 4%;
+    gap: 12px;
+  }
+
+  .medical-arrow {
+    width: 43px;
+    height: 43px;
+  }
+
+  .medical-card h3 {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    height: auto;
+    min-height: 1250px;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 90%;
+    margin: 115px auto 0;
+  }
+
+  .hero-content h1 {
+    font-size: 55px;
+    letter-spacing: -3px;
+  }
+
+  .doctor-visual {
+    top: 410px;
+    left: 5%;
+    width: 55%;
+    height: 350px;
+  }
+
+  .award-card {
+    top: 425px;
+    left: auto;
+    right: 7%;
+  }
+
+  .lungs-visual {
+    top: 570px;
+    right: 2%;
+    width: 49%;
+    height: 270px;
+  }
+
+  .experience-card {
+    bottom: 0;
+    left: 0;
+    min-width: 160px;
+  }
+
+  .lungs-stat {
+    right: 0;
+  }
+
+  .medical-cards {
+    position: absolute;
+    top: 880px;
+    left: 5%;
+    right: 5%;
+    bottom: auto;
+    height: 320px;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .medical-card {
+    min-height: 95px;
+  }
+
+  .medical-image {
+    width: 30%;
+    height: 90%;
+    top: 5%;
+  }
+
+  .medical-card h3 {
+    right: 12%;
+    bottom: 20%;
+  }
+
+  .medical-arrow {
+    width: 38px;
+    height: 38px;
+    top: 10%;
+    right: 5%;
+    font-size: 18px;
+  }
+}
+@media (max-width: 700px) {
+  .doctor-video {
+    transform: scaleX(1.35);
+  }
+
+  .lungs-video {
+    transform: scaleX(1.35);
+  }
+}/* Hero composition and mobile refinements */
+.hero {height: min(950px, 100vh);min-height: 850px;}
+@media(max-width:1050px) and (min-width:701px){.hero{height:900px;min-height:900px}.hero-content{top:20%}.hero-content h1{font-size:clamp(48px,6vw,68px)}.doctor-visual{top:17%;height:48%}.lungs-visual{top:21%;height:42%}.medical-cards{height:24%;bottom:2%}}
+@media(max-width:700px){.hero{height:auto;min-height:1260px;padding-top:1px}.hero-content{margin-top:105px}.doctor-visual{top:430px;height:300px}.award-card{top:435px;height:125px}.lungs-visual{top:590px;height:235px}.medical-cards{top:890px;height:330px}.mobile-menu{display:flex;position:absolute;z-index:90;top:68px;left:5%;right:5%;padding:14px;flex-direction:column;gap:4px;border-radius:16px;background:#ffffffed;box-shadow:0 12px 35px #174b6826}.mobile-menu a{padding:12px 14px;text-decoration:none;color:#194a69;font-size:14px;font-weight:700;border-radius:8px}.mobile-menu a:hover{background:#e8f6ec}}
+.hero {height: min(950px, 100vh);min-height:850px;}
+@media(max-width:1050px) and (min-width:701px){.hero{height:900px;min-height:900px}.hero-content{top:20%}.hero-content h1{font-size:clamp(48px,6vw,68px)}.doctor-visual{top:17%;height:48%}.lungs-visual{top:21%;height:42%}.medical-cards{height:24%;bottom:2%}}
+/* Reference details that sit around the main collage */
+.social-pill{position:absolute;z-index:8;top:11%;right:-23px;height:84px;width:244px;padding:10px 20px 10px 11px;border-radius:50px 0 0 50px;background:#fff;display:flex;align-items:center;gap:11px;box-shadow:0 8px 30px #2e628022;color:#1a354b}
+.social-avatar{flex:0 0 68px;height:68px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 28%,#6ed0f4,#1265ae 62%,#0c477e);color:white;font-weight:800;font-size:21px;border:4px solid #e8f6fc}
+.social-copy{min-width:0;white-space:nowrap;overflow:hidden}.social-copy strong{display:block;font-size:16px;letter-spacing:-.5px}.social-copy small{font-size:11px;color:#667d8e}
+.edge-label{position:absolute;z-index:8;padding:15px 23px;border-radius:40px;background:#ffffff70;color:#24445e;font-size:19px;font-weight:800;box-shadow:0 6px 20px #396f8c10}
+.edge-label-right{right:-47px;bottom:25%;transform:rotate(14deg)}.edge-label-left{left:-47px;bottom:1%;transform:rotate(-13deg)}
+@media(max-width:700px){.hero{height:auto;min-height:1260px;padding-top:1px}.hero-content{margin-top:105px}.doctor-visual{top:430px;height:300px}.award-card{top:435px;height:125px}.lungs-visual{top:590px;height:235px}.medical-cards{top:890px;height:330px}.social-pill{top:365px;width:198px;height:68px;right:-30px;padding:7px 16px 7px 8px}.social-avatar{flex-basis:54px;height:54px;font-size:17px}.social-copy strong{font-size:13px}.social-copy small{font-size:9px}.edge-label{font-size:14px;padding:11px 17px}}
+/* Clean oval crops keep source video shadows and edges out of the hero. */
+.doctor-mask,.lungs-mask{position:absolute;overflow:hidden;border-radius:50%;isolation:isolate}
+.doctor-mask{width:85%;height:90%;top:0;left:6%}
+.doctor-mask .doctor-circle,.lungs-mask .lungs-circle{inset:0;width:100%;height:100%;border-radius:50%}
+.doctor-mask .doctor-video,.lungs-mask .lungs-video{inset:-7%;width:114%;height:114%;max-width:none;max-height:none;border-radius:50%;transform:scale(1.06);filter:brightness(1.12) saturate(1.04);mix-blend-mode:lighten}
+.lungs-mask{inset:0}
+.medical-card .medical-image{object-fit:cover;left:4%;top:8%;width:50%;height:84%;border-radius:12px;mix-blend-mode:multiply;animation:organ-drift 7s ease-in-out infinite alternate;transform-origin:center}
+.medical-card:nth-child(2) .medical-image{animation-delay:-2.2s}
+.medical-card:nth-child(3) .medical-image{animation-delay:-4s;mix-blend-mode:screen}
+@keyframes organ-drift{from{transform:scale(.91)}to{transform:scale(1.08)}}
+@media(max-width:700px){.doctor-mask{width:85%;height:90%;top:0;left:6%}.doctor-mask .doctor-video,.lungs-mask .lungs-video{transform:scale(1.04)}}
+@media(prefers-reduced-motion:reduce){.medical-card .medical-image{animation:none}}
+.hero-content h1 .smart-line{position:relative;display:inline-block;padding-left:72px;white-space:nowrap}
+.stethoscope{position:absolute;width:70px;height:70px;left:0;top:50%;transform:translateY(-49%);fill:none;stroke:#427b9d;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 2px 2px #154b6822)}
+.doctor-mask .doctor-video,.lungs-mask .lungs-video{filter:brightness(1.23) contrast(1.06) saturate(1.15);mix-blend-mode:lighten}
+.lungs-mask .lungs-video{inset:-12%;width:124%;height:124%;transform:scale(1.06);object-fit:cover;object-position:center;border-radius:50%}
+.social-pill{right:3.5%;top:11%;width:270px;height:86px;padding:9px 16px 9px 9px;border-radius:48px;background:#ffffffed;box-shadow:0 14px 34px #1a5b7d36,0 0 0 1px #ffffffa8;animation:profile-float 4s ease-in-out infinite}
+.social-avatar{position:relative;overflow:visible;flex-basis:68px;height:68px;box-shadow:0 5px 17px #064e8e55}
+.social-copy strong{font-size:17px;color:#153b58}.social-copy small{display:flex;align-items:center;gap:7px;margin-top:4px;font-size:11px;color:#536f82;font-weight:700}
+.signal-dot{position:absolute;right:-1px;bottom:1px;width:16px;height:16px;border-radius:50%;background:#36ee78;border:3px solid white;box-shadow:0 0 0 0 #34e87399;animation:signal-pulse 1.7s ease-out infinite}
+.call-signal{display:inline-block;width:8px;height:8px;border-radius:50%;background:#35df70;box-shadow:0 0 8px 3px #39e87988;animation:signal-glow 1.4s ease-in-out infinite alternate}
+@keyframes signal-pulse{to{box-shadow:0 0 0 10px #34e87300}}
+@keyframes signal-glow{from{box-shadow:0 0 4px 1px #39e87966}to{box-shadow:0 0 12px 5px #39e879aa}}
+@keyframes profile-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+.edge-label{z-index:9;padding:13px 20px;border:1px solid #ffffffb5;background:#ffffffd9;color:#194d6d;font-size:16px;letter-spacing:.4px;backdrop-filter:blur(10px);box-shadow:0 10px 25px #1e527a2b;animation:label-float 4.5s ease-in-out infinite}
+.edge-label-right{right:2%;bottom:24%;transform:rotate(10deg)}
+.edge-label-left{left:2%;bottom:2.5%;transform:rotate(-10deg);animation-delay:-2s}
+@keyframes label-float{0%,100%{margin-top:0}50%{margin-top:-8px}}
+.medical-card .medical-image{object-fit:contain;left:5%;top:7%;width:49%;height:86%;border-radius:0;opacity:.94;mix-blend-mode:multiply;filter:saturate(.92) drop-shadow(0 8px 12px #23638718)}
+.medical-card:nth-child(3) .medical-image{mix-blend-mode:multiply}
+@media(max-width:700px){.social-pill{top:365px;right:4%;width:228px;height:68px;padding:6px 13px 6px 7px}.social-avatar{flex-basis:54px;height:54px}.social-copy strong{font-size:14px}.social-copy small{font-size:9px}.edge-label-right{right:1%;bottom:24%}.edge-label-left{left:1%;bottom:1.5%}.stethoscope{width:52px;height:55px}.hero-content h1 .smart-line{padding-left:55px}}
+@media(prefers-reduced-motion:reduce){.social-pill,.signal-dot,.call-signal,.edge-label{animation:none}}
+
+
+/* Natural video color with the same smooth oval crop on both clips. */
+.doctor-mask,.lungs-mask{border-radius:50%;clip-path:ellipse(50% 50% at 50% 50%)}
+.doctor-mask .doctor-video,.lungs-mask .lungs-video{filter:brightness(1.02) contrast(1.01) saturate(1.03);mix-blend-mode:normal}
+.lungs-mask .lungs-video{inset:-12%;width:124%;height:124%;transform:scale(1.06);object-fit:cover;object-position:center;border-radius:50%}
+.header-nav a:hover,.header-nav a:focus-visible{color:#07864f;text-shadow:0 2px 12px #1fe67955}
+.header-logo:hover,.header-logo:focus-visible{color:#07864f}
+.contact-button:hover,.contact-button:focus-visible{color:#07864f}
+@media(prefers-reduced-motion:reduce){.header-nav a,.header-logo,.contact-button{transition:none}}
+/* Requested finish: white organ cards, taller portrait ovals, larger brand mark. */
+.medical-card,.medical-card.kidney-card{background:#fff}
+.kidney-card h3{color:#263e50}
+.kidney-card .medical-arrow{background:#42e979;color:#07533c}
+.doctor-mask{height:98%}
+.doctor-mask .doctor-circle{height:100%}
+.lungs-mask{top:-5%;right:0;bottom:-5%;left:0}

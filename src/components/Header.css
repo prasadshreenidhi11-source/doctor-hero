@@ -1,0 +1,14 @@
+.header{position:absolute;top:0;left:0;width:100%;height:88px;padding:0 5.8%;display:flex;align-items:center;justify-content:space-between;z-index:100;font-family:'Manrope',sans-serif}
+.header-logo{display:flex;align-items:center;gap:7px;color:#153c5b;font-size:21px;font-weight:800;text-decoration:none;letter-spacing:-1px}.logo-icon{width:25px;height:25px;background:#173e5b;color:#43e982;display:flex;align-items:center;justify-content:center;border-radius:50% 50% 50% 10%;font-size:17px}
+.header-nav{display:flex;align-items:center;gap:39px}.header-nav a{color:#35536c;font-size:13px;font-weight:600;text-decoration:none;transition:color .3s;white-space:nowrap}.header-nav a:hover,.header-nav a.active{color:#fff}.header-nav .active{text-decoration:underline;text-underline-offset:5px}.nav-dropdown{display:flex;align-items:center;gap:5px}
+.contact-button{height:49px;padding:4px 5px 4px 20px;display:flex;align-items:center;gap:15px;border-radius:50px;background:#fff;color:#243e54;font-size:13px;font-weight:700;text-decoration:none;box-shadow:0 3px 15px #2f5c7d10}.contact-arrow{width:39px;height:39px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#42e97b;color:#063e31;font-size:21px;transition:transform .3s}.contact-button:hover .contact-arrow{transform:rotate(45deg)}
+@media(max-width:768px){.header{height:75px;padding:0 5%}.header-nav{display:none}.header-logo{font-size:19px}.contact-button{height:43px;font-size:12px}.contact-arrow{width:35px;height:35px}}
+.header-logo{font-size:18px}
+.header-nav{gap:clamp(18px,2.8vw,34px)}
+.header-nav a{font-size:18px}
+.contact-button{font-size:18px;gap:11px}
+@media(max-width:768px){.header-logo{font-size:18px}.contact-button{font-size:18px}}
+
+.header-logo{font-size:24px;gap:9px}
+.logo-icon{width:30px;height:30px;font-size:19px}
+@media(max-width:768px){.header-logo{font-size:21px}.logo-icon{width:28px;height:28px;font-size:18px}}
